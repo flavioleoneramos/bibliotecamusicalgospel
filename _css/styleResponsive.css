@@ -1,0 +1,93 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11/05/2022, 11:36:42
+    Author     : leone
+*/
+
+@media screen and (min-width: 800px){
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    div#interface{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+    
+    div#interface header#headerAll{
+        width: 100%;
+        margin: auto;
+        position: relative;
+        margin: 5px auto 5px auto;
+    }
+    
+    div#interface section#sectionAll{
+        width: 60%;
+        float: left;
+        position: relative;
+        margin: 5px auto 5px auto;
+    }
+    
+    div#interface aside#asideAll{
+        width: 35%;
+        float: right;
+        position: relative;
+        margin: 5px auto 5px auto;
+        text-align: center;
+    }
+    
+    div#interface footer#footerAll{
+        width: 100%;
+        margin: 5px auto 5px auto;
+        clear: both;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 800px){
+    div#interface{
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+    
+    div#interface header#headerAll{
+        width: 100%;
+        margin: 5px auto 5px auto;
+        position: relative;
+        border: 3px solid blue;
+    }
+    
+    div#interface section#sectionAll{
+        width: 100%;
+        margin: 5px auto 5px auto;
+        position: relative;
+        border: 3px solid blue;
+        text-align: center;
+    }
+    
+    div#interface aside#asideAll{
+        text-align: center;
+        width: 100%;
+        margin: 5px auto 5px auto;
+        position: relative;
+        border: 3px solid blue;
+    }
+    
+    div#interface footer#footerAll{
+        text-align: center;
+        width: 100%;
+        margin: 5px auto 5px auto;
+        clear: both;
+        position: relative;
+        border: 3px solid blue;
+    }
+}
+

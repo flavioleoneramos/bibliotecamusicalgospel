@@ -1,0 +1,25 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11/05/2022, 19:41:41
+    Author     : leone
+*/
+@media screen and (min-width: 800px){    
+    
+    nav#menu{
+        position: relative;
+    }
+
+    nav#menu ul{
+        list-style: none
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    nav#menu{
+        position: relative;
+    }
+}

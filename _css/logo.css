@@ -1,0 +1,50 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11/05/2022, 21:23:47
+    Author     : leone
+*/
+
+#circle{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-image: -webkit-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+    background-image: -moz-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+    background-image: -o-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+    background-image: -ms-linear-gradient(bottom, rgb(109, 2, 2) 22%, rgb(201, 0, 0) 61%);
+    background-image: linear-gradient(bottom, #6D0202 22%, rgb(201, 0, 0) 61%);
+    color: #fff;
+    box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.67);
+    padding-top: 4px;
+
+
+
+}
+
+#circle:hover{
+    box-shadow: 0px 15px 20px -5px rgba(227, 2, 36, 1);
+}
+
+#circle #triangulo a.bmg{
+    text-decoration: none;
+    color: #6D0202;
+    font-weight: bold;
+    font-size: 15pt;
+    top: 39px;
+    left: 36px;
+    position: absolute;
+
+}
+
+#circle #triangulo{
+    width: 0; 
+    height: 0; 
+    margin-left: 35px;
+    border-top: 47px solid transparent;
+    border-bottom: 47px solid transparent;
+    border-left: 55px solid rgb(248, 245, 245);
+}

@@ -1,0 +1,58 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11/05/2022, 11:37:46
+    Author     : leone
+*/
+
+.botao{
+    padding: 10px;
+    background-color: #8a0015;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.botao:hover{
+    background-color: #e30224;
+    cursor: pointer;
+}
+
+.linkMenu{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #8a0015;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.linkMenu:hover{
+    text-decoration: underline;
+    background-color: #e30224;
+}
+
+a.link{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #e30224;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.link:hover{
+    text-decoration: underline;
+    background-color: #8a0015;
+}
+
+a.link:visited{
+    color: #e30224;
+}

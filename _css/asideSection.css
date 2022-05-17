@@ -1,0 +1,20 @@
+div#tvOnline{
+    margin: 20px auto 25px auto;
+    text-align: center;
+}
+
+div#tvOnline ul{
+    list-style: none;
+}
+
+div#tvOnline ul li{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+div#tvOnline ul li img{
+    width: 100%;
+    height: 100%;
+}
