@@ -13,5 +13,5 @@
     $c->mostrarTvAside();
 
 ?>
-</br></br><a href="tvonline.php" class="link">Veja mais em Tv Online</a>
+</br></br><a href="tvonline.php" class="botao">Veja mais em Tv Online</a>
 </div>

@@ -9,17 +9,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 
 .botao{
     padding: 10px;
-    background-color: #8a0015;
+    background-color: #e30224;;
     color: white;
     font-size: 12pt;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 0px;
 }
 
 .botao:hover{
-    background-color: #e30224;
+    background-color: #8a0015;
     cursor: pointer;
 }
 
@@ -38,7 +38,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     background-color: #e30224;
 }
 
-a.link{
+.link{
     padding: 10px;
     border-radius: 15px;
     background-color: #e30224;
@@ -48,11 +48,7 @@ a.link{
     text-decoration: none;
 }
 
-a.link:hover{
+.link:hover{
     text-decoration: underline;
     background-color: #8a0015;
-}
-
-a.link:visited{
-    color: #e30224;
 }
