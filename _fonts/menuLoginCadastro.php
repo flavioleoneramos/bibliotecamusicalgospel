@@ -7,6 +7,10 @@
     div#darkModDiv input#darkMod{
         cursor: pointer;
     }
+
+    div#loginCadastro a.link{
+        color: white;
+    }
 </style>
 <div id="modo">
 
@@ -19,15 +23,15 @@
         if(!isset($_SESSION['id'])){
             echo "<ul>
                 <li>
-                    <a href='login.php' class='botao'>Login</a>
-                    <a href='cadastro.php' class='botao'>Cadastro</a>
+                    <a href='login.php' class='link'>Login</a>
+                    <a href='cadastro.php' class='link'>Cadastro</a>
                 </li>
             </ul>";
         }else{
             echo "<ul>
             <li>
-                <a href='logout.php' class='botao'>Logout</a>
-                <a href='perfil.php' class='botao'>Perfil</a>
+                <a href='logout.php' class='link'>Logout</a>
+                <a href='perfil.php' class='link'>Perfil</a>
             </li>
         </ul>";
         }

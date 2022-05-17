@@ -3,6 +3,10 @@ div#tvOnline{
     text-align: center;
 }
 
+div#tvOnline a.link{
+    color: white;
+}
+
 div#tvOnline ul{
     list-style: none;
 }
