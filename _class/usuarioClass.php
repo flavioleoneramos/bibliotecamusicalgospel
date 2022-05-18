@@ -16,12 +16,13 @@ class usuarioClass {
     private $email;
     private $senha;
     private $foto;
+    private $permissao;
     
-    public function __construct() {
-        $this->nome = "testeNome";
-        $this->email = "testeEmail";
-        $this->senha = "testeSenha";
-        $this->foto = "testeFoto";
+    public function __construct($n,$e,$s,$p) {
+        $this->nome = $n;
+        $this->email = $e;
+        $this->senha = $s;
+        $this->permissao = $p;
     }
 
     
@@ -60,4 +61,21 @@ class usuarioClass {
 
 
 
+	/**
+	 * 
+	 * @return mixed
+	 */
+	function getPermissao() {
+		return $this->permissao;
+	}
+	
+	/**
+	 * 
+	 * @param mixed $permissao 
+	 * @return usuarioClass
+	 */
+	function setPermissao($permissao): self {
+		$this->permissao = $permissao;
+		return $this;
+	}
 }

@@ -20,7 +20,7 @@
 </div>-->
 <div id="loginCadastro">
     <?php
-        if(!isset($_SESSION['id'])){
+        if(!isset($_SESSION['nome'])){
             echo "<ul>
                 <li>
                     <a href='login.php' class='link'>Login</a>
@@ -31,7 +31,7 @@
             echo "<ul>
             <li>
                 <a href='logout.php' class='link'>Logout</a>
-                <a href='perfil.php' class='link'>Perfil</a>
+                <a href='perfil.php' class='link' id='perfil'>Perfil</a>
             </li>
         </ul>";
         }
