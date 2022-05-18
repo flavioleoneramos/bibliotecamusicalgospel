@@ -1,5 +1,6 @@
 <?php
-    session_start()
+    session_start();
+    //require_once "_class/usuarioClass.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/PHPClass.php to edit this template
@@ -18,11 +17,8 @@ class usuarioClass {
     private $foto;
     private $permissao;
     
-    public function __construct($n,$e,$s,$p) {
-        $this->nome = $n;
-        $this->email = $e;
-        $this->senha = $s;
-        $this->permissao = $p;
+    public function __construct() {
+        $this->permissao = false;
     }
 
     
@@ -78,4 +74,25 @@ class usuarioClass {
 		$this->permissao = $permissao;
 		return $this;
 	}
+
+    function verUsuario($email){
+
+        require_once "conexaoClass.php";
+        $db = new conexaoClass();
+        $conn = new mysqli($db->getLocalhost(),$db->getUsuario(),$db->getSenha(),$db->getNomeBanco());
+        
+        if($conn->connect_error){
+            die ("Conexão falhou " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM usuario WHERE email = $email";
+
+        $result = $conn->query($sql);
+
+        if($result->num_rows > 0){
+            while($row = $result->fetch_assoc()){
+                echo $row["nome"];
+            }
+        }
+    }
 }

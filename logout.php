@@ -12,4 +12,6 @@ $user->setFoto("");
 $user->setPermissao(false);
 $user->setSenha("");
 
+header('location: index.php');
+
 ?>
