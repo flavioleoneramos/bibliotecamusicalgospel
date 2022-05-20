@@ -23,6 +23,7 @@
         <input type="submit" value="Login" class="botao"></br>
     </form>
     <div id="NaoTemConta">
+        <em>Esqueceu a senha?&nbsp;</em><a href="recupSenha.php" class="botao">Recuperar Senha</a></br></br></br>
         <em>Ainda não tem uma conta? <a href="cadastro.php" class="botao">Cadastre-se</a></em>
     </div>
 </div>

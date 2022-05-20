@@ -16,7 +16,12 @@
     <style>
         #home{
             text-decoration: underline;
-            background-color: #e30224;
+        }
+
+        section#sectionIndex{
+            width: 60%;
+            float: left;
+            margin: 20px auto 20px auto;
         }
     </style>
 </head>
@@ -29,9 +34,9 @@
         
     ?>
 </header>
-<section id="sectionAll">
+<section id="sectionIndex">
     <?php 
-        require_once '_fonts/sectionAll.php';
+        require_once '_fonts/sectionIndex.php';
     ?>
 </section>
 <aside id="asideAll">

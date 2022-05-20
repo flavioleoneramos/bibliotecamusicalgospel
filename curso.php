@@ -21,7 +21,6 @@
 
         #curso{
             text-decoration: underline;
-            background-color: #e30224;
         }
         
     </style>
