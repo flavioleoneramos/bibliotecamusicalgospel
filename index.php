@@ -22,6 +22,7 @@
             width: 60%;
             float: left;
             margin: 20px auto 20px auto;
+            text-align: center;
         }
     </style>
 </head>
