@@ -1,6 +1,6 @@
 <style>
     div#login{
-        width: 500px;
+        width: 400px;
         border: 3px solid #e30224;
         border-radius: 10px;
         margin: auto;

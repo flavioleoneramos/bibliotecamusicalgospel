@@ -135,7 +135,7 @@ if($result->num_rows > 0){
         $tv->setLinkTv($row["linkTv"]);
         echo "<li>";
             echo "<figure>
-                <img src='" . $row["imagemTv"] . "' alt='" . $row["nomeTv"] . "'>
+                <img src='" . $row["imagemTv"] . "' alt='" . $row["nomeTv"] . " class='imgP''>
                 <figcaption>                    
                     <form method='get' action='displayTv.php'>
                         <input type='text' hidden='hidden' name='idTv' value='" . $tv->getIdTv() . "'>

@@ -26,6 +26,12 @@
         margin-right: 20px;
     }
 
+    @media screen and (max-width: 800px){
+        ul#index{
+            text-align: center;
+        }
+    }
+
 </style>
 <ul id="index">
     <li>

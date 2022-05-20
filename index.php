@@ -17,13 +17,19 @@
         #home{
             text-decoration: underline;
         }
-
         section#sectionIndex{
             width: 60%;
             float: left;
             margin: 20px auto 20px auto;
             text-align: center;
         }
+        @media screen and (max-width: 800px){
+        section#sectionIndex{
+            width: 100%;
+            margin: 20px auto 20px auto;
+            text-align: center;
+        }
+    }
     </style>
 </head>
 <body>

@@ -1,5 +1,8 @@
 <head>
     <link rel="stylesheet" href="_css/asideSection.css">
+    <style>
+        
+    </style>
 </head>
 
 <div id="tvOnline">

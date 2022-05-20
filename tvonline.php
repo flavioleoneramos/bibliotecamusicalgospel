@@ -33,6 +33,10 @@
         #tv{
             text-decoration: underline;
         }
+
+        @media screen and (max-width: 800px){
+            
+        }
     </style>
 </head>
 <body>

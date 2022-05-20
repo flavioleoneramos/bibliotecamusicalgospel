@@ -1,1 +1,0 @@
-<h1>Section footer</h1>

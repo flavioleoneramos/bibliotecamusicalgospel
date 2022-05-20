@@ -22,3 +22,14 @@ div#tvOnline ul li img{
     width: 100%;
     height: 100%;
 }
+
+@media screen and (max-width: 800px){
+    div#tvOnline ul li img{
+        width: 100px;
+        height: 100px;
+        
+    }
+    div#tvonline{
+        background-color: red;
+    }
+}

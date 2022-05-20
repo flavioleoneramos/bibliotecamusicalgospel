@@ -8,11 +8,12 @@
     div#footerIndex ul{
         width: 100%;
         list-style: none;
+        display: inline-block;
     }
 
     div#footerIndex ul li{
         display: inline-block;
-        margin: 30px;
+        margin: 10px;
     }
 
     div#cripto{
@@ -23,11 +24,24 @@
     div#cripto img{
         margin: 20px;
     }
+
+    div#pix{
+        margin: 20px;
+    }
 </style>
 <div id="footerIndex">
     <h1>Colabore com o canal da forma de desejar!</h1>
-    <h4><em>Veja abaixo as formas de contribuir diretamente com o canal.</em></h4>
+    <h4><em>Veja abaixo as formas de contribuir diretamente com o canal.</em></h4></br>
+    <div id="pix">
+                
+                <h2><em>Pix</h2></em>
+                <p>Contribua com qualquer valor para o endereço de email abaixo: </p>
+                <p><em>topgospeladoracao@gmail.com</em></p>
+                <img src="_imagens/pix.png" alt="Pix">        
+            </div>
     <ul>
+        
+        
         <li>
         <div id="paypal">
         <h2><em>PayPal</em></h2>
@@ -39,6 +53,7 @@
         </div>
         </li>
         <li>
+        
             <div id="pagseguro">
                 <h2><em>PagSeguro</em></h2>
                 <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
@@ -51,12 +66,13 @@
                 </form>
                 <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
             </div>
-            <div id="cripto">
-                <h4><em>Você também pode enviar sua doação em cripto moeda! Escolha a rede blockchain de sua preferência e apoie o canal.</em></h4>
-                <a href="https://polygonscan.com/address/0x816c5b6c3dd6a374490091b6776d549847aa939f" target="blank"><img src="_imagens/polygon.PNG" alt="Rede Polygon"></a><a href="https://bscscan.com/address/0x816c5b6c3dd6a374490091b6776d549847aa939f" target="blank"><img src="_imagens/binance2.PNG" alt="Rede Binance"></a>
-                
-                <p><a href="https://polygonscan.com/address/0x816c5b6c3dd6a374490091b6776d549847aa939f">0x816c5b6c3dd6a374490091b6776d549847aa939f</a></p>
-            </div>
+            
         </li>
     </ul>
+    <div id="cripto">
+        <h4><em>Você também pode enviar sua doação em cripto moeda! Escolha a rede blockchain de sua preferência e apoie o canal.</em></h4>
+        <a href="https://polygonscan.com/address/0x816c5b6c3dd6a374490091b6776d549847aa939f" target="blank"><img src="_imagens/polygon.PNG" alt="Rede Polygon"></a><a href="https://bscscan.com/address/0x816c5b6c3dd6a374490091b6776d549847aa939f" target="blank"><img src="_imagens/binance2.PNG" alt="Rede Binance"></a>
+        
+        <p><a href="https://polygonscan.com/address/0x816c5b6c3dd6a374490091b6776d549847aa939f">0x816c5b6c3dd6a374490091b6776d549847aa939f</a></p>
+    </div>
 </div>
