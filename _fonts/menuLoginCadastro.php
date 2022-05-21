@@ -11,6 +11,13 @@
     div#loginCadastro a.link{
         color: white;
     }
+
+    @media screen and (max-width: 800px){
+        div#loginCadastro{
+            margin-top: 30px;
+            margin-left: -50px;
+        }
+    }
 </style>
 <div id="modo">
 
