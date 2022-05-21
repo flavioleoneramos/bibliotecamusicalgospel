@@ -15,7 +15,7 @@
         }
 
         nav#menu ul li{
-            height: 30px;
+            margin-bottom: 2px;
         }
 
         nav#menu ul li a{
@@ -25,12 +25,20 @@
         nav#menu img.iconMenu{
             float: right;
             cursor: pointer;
+            background-color: white;
+            border-radius: 5px;
+            padding: 3px;
+            box-shadow: 2px 2px 2px white;
         }
 
     }
 </style>
 <nav id="menu">
-        <img src="_imagens/iconMenu.png" class="iconMenu" onclick="mostrarMenu()">
+    <div id="iconMenuResponsivo">
+        <!--<img src="_imagens/iconMenuClose.png" class="iconmenu" id="iconMenuClose" onclick="fecharMenu()">-->
+        <img src="_imagens/iconMenuOpen.png" class="iconMenu" id="iconMenuOpen" onclick="mostrarMenu()">
+    </div>
+        
         <ul id="menuOpacit">
             <li class="linkMenu">
                 <a href="index.php" class="linkMenu" id="home">Home</a>
@@ -54,6 +62,21 @@
     function mostrarMenu(){
         var menu = document.getElementById("menuOpacit")
         menu.style.display = "block"
+        var imgClose = document.querySelector("img#iconMenuOpen")
+        imgClose.style.display = "none";
+        //imgClose.src = "_imagens/iconMenuClose.png";
+        var box = document.getElementById("iconMenuResponsivo")
+        box.innerHTML = `<img src="_imagens/iconMenuClose.png" class="iconMenu" id="iconMenuClose" onclick="fecharMenu()">`
+    }
+
+    function fecharMenu(){
+        var menu = document.getElementById("menuOpacit")
+        
+        menu.style.display = "none"
+        var imgClose = document.querySelector("img#iconMenuClose")
+        imgClose.style.display = "none"
+        var box = document.getElementById("iconMenuResponsivo")
+        box.innerHTML = `<img src="_imagens/iconMenuOpen.png" class="iconMenu" id="iconMenuOpen" onclick="mostrarMenu()">`
     }
 </script>
 
