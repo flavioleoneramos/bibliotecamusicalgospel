@@ -95,14 +95,14 @@ public function inserirFaucet($idFaucet,$nomeFaucet,$imagemFaucet,$linkFaucet,$d
         die("Falha ao conectar: " . $conn->connect_error);
     }
 
-    require_once "_class/faucetClass.php";
+    /*require_once "_class/faucetClass.php";
     $fau = new faucetClass();
     $fau->setIdFaucet($idFaucet);
     $fau->setNomeFaucet($nomeFaucet);
     $fau->setImagemFaucet($imagemFaucet);
     $fau->setLinkFaucet($linkFaucet);
-    $fau->setDescricaoFaucet($descricaoFaucet);
-    $sql = "INSERT INTO faucet VALUES ('$fau->getIdFaucet()','$fau->getNomeFaucet()','$fau->getImagemFaucet()','$fau->getLinkFaucet()','$fau->getDescricaoFaucet()')";
+    $fau->setDescricaoFaucet($descricaoFaucet);*/
+    $sql = "INSERT INTO faucet VALUES ('$idFaucet','$nomeFaucet','$imagemFaucet','$linkFaucet','$descricaoFaucet')";
     
     if($conn->query($sql) === TRUE){
         echo "Dados de Faucets gravados com sucesso!";
@@ -169,7 +169,7 @@ public function inserirCurso($idCurso,$nomeCurso,$imagemCurso,$linkCurso,$linkCo
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
     }
-    require_once "_class/cursoClass.php";
+    /*require_once "_class/cursoClass.php";
     $cur = new cursoClass();
     $cur->setIdCurso($idCurso);
     $cur->setNomeCurso($nomeCurso);
@@ -178,8 +178,8 @@ public function inserirCurso($idCurso,$nomeCurso,$imagemCurso,$linkCurso,$linkCo
     $cur->setLinkComprar($linkComprar);
     $cur->setImagemLinkCurso($imagemLinkCurso);
     $cur->setImagemLinkComprar($imagemLinkComprar);
-    $cur->setDescricaoCurso($descricaoCurso);
-    $sql = "INSERT INTO curso VALUES ('$cur->getIdCurso()','$cur->getNomeCurso','$cur->getImagemCurso','$cur->getLinkCurso','$cur->getLinkComprar','$cur->getImagemLinkCurso','$cur->getImagemLinkComprar','$cur->getDescricaoCurso')";
+    $cur->setDescricaoCurso($descricaoCurso);*/
+    $sql = "INSERT INTO curso VALUES ('$idCurso','$nomeCurso','$imagemCurso','$linkCurso','$linkComprar','$imagemLinkCurso','$imagemLinkComprar','$descricaoCurso')";
     
     if($conn->query($sql) === TRUE){
         echo "Dados de Cursos gravados com sucesso!";

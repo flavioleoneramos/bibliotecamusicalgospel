@@ -10,14 +10,13 @@
 
 <h1>Inserir Curso</h1>
 
-<form method="get" action="inserirCurso.php">
+<form method="post" action="inserirCurso.php" enctype='multipart/form-data'>
     <p>IdCurso: <input type="text" id="idCurso" name="idCurso"></p>
     <p>NomeCurso: <input type="text" id="nomeCurso" name="nomeCurso"></p>
     <p>ImagemCurso: <input type="file" id="imagemCurso" name="imagemCurso"></p>
-    <!-- Mover arquivo para imagem -->
     <p>LinkCurso: <input type="text" id="linkCurso" name="linkCurso"></p>
     <p>LinkComprar: <input type="text" id="linkComprar" name="linkComprar"></p>
-    <p>ImagemLinkCurso: <input type="text" id="imagemLinkCurso" name="imagemLinkCurso"></p>
+    <p>ImagemLinkCurso: <input type="file" id="imagemLinkCurso" name="imagemLinkCurso"></p>
     <p>ImagemLinkComprar: <input type="file" id="imagemLinkComprar" name="imagemLinkComprar"></p>
     <p>DescricaoCurso: <input type="text" id="descricaoCurso" name="descricaoCurso"></p>
     <input type="submit" value="Cadastrar Curso" class="botao">
@@ -25,7 +24,7 @@
 
 <h1>Inserir Faucet</h1>
 
-<form method="get" action="inserirFaucet.php">
+<form method="post" action="inserirFaucet.php" enctype='multipart/form-data'>
     <p>IdFaucet: <input type="text" id="idFaucet" name="idFaucet"></p>
     <p>NomeFaucet: <input type="text" id="nomeFaucet" name="nomeFaucet"></p>
     <p>ImagemFaucet: <input type="file" id="imagemFaucet" name="imagemFaucet"></p>
