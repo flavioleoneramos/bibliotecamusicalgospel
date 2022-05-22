@@ -60,6 +60,7 @@ class conexaoClass {
     //funções específicas
 
 public function inserirTv($idTv,$nomeTv,$imagemTv,$linkTv){
+   //$imagemTv = "_imagens/" . $imagemTv;
     require_once "_class/conexaoClass.php";
     $c = new conexaoClass();
     $conn = new mysqli($c->getLocalhost(),$c->getUsuario(),$c->getSenha(),$c->getNomeBanco());
@@ -75,7 +76,7 @@ public function inserirTv($idTv,$nomeTv,$imagemTv,$linkTv){
     $tvi->setImagemTv($imagemTv);
     $tvi->setLinkTv($linkTv);
 
-    $sql = "INSERT INTO tvOnline VALUES ('$tvi->getIdTv()','$tvi->getNomeTv()','$tvi->getImagemTv()','$tvi->getLinkTv()')";
+    $sql = "INSERT INTO tvOnline VALUES ('$idTv','$nomeTv','$imagemTv','$linkTv')";
     
     if($conn->query($sql) === TRUE){
         echo "Dados de Tv Online gravados com sucesso!";

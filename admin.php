@@ -1,6 +1,6 @@
 <h1>Inserir Tv</h1>
 
-<form method="get" action="inserirTv.php">
+<form method="post" action="inserirTv.php" enctype='multipart/form-data'>
     <p>idTv: <input type="text" id="idTv" name="idTv"></p>
     <p>NomeTv: <input type="text" id="nomeTv" name="nomeTv"></p>
     <p>ImagemTv: <input type="file" id="imagemTv" name="imagemTv"></p>
