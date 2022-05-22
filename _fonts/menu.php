@@ -1,6 +1,11 @@
 
 
 <style>
+    @media screen and (min-width: 800px){
+    nav#menu img.iconMenu{
+            display: none;
+        }
+    }
     @media screen and (max-width: 800px){
         nav#menu{
             width: 200px;
@@ -20,6 +25,7 @@
 
         nav#menu ul li a{
             height: 100%;
+            width: 100%;
         }
 
         nav#menu img.iconMenu{
