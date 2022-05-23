@@ -1,3 +1,11 @@
+<style>
+    @media screen and (max-width: 800px){
+        div#playlist{
+            text-align: left;
+        }
+    }
+    
+</style>
 <div id="playlist">
     <h1>Playlist adicionadas ao canal</h1>
 

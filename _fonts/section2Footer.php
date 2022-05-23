@@ -28,33 +28,32 @@
     div#pix{
         margin: 20px;
     }
+
+    @media screen and (max-width: 800px){
+        div#footerIndex{
+            margin-left: 0;
+        }
+
+        div#pagseguro{
+            margin-left: -60px;
+        }
+    }
 </style>
 <div id="footerIndex">
     <h1>Colabore com o canal da forma de desejar!</h1>
     <h4><em>Veja abaixo as formas de contribuir diretamente com o canal.</em></h4></br>
     <div id="pix">
                 
-                <h2><em>Pix</h2></em>
-                <p>Contribua com qualquer valor para o endereço de email abaixo: </p>
-                <p><em>topgospeladoracao@gmail.com</em></p>
-                <img src="_imagens/pix.png" alt="Pix">        
-            </div>
+        <h2><em>Pix</h2></em>
+        <p>Contribua com qualquer valor para o endereço de email abaixo: </p>
+        <p><em>topgospeladoracao@gmail.com</em></p>
+        <img src="_imagens/pix.png" alt="Pix">        
+    </div>
     <ul>
         
         
         <li>
-        <div id="paypal">
-        <h2><em>PayPal</em></h2>
-            <form action="https://www.paypal.com/donate" method="post" target="_top">
-                <input type="hidden" name="hosted_button_id" value="W84TH663UFX7G" />
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
-            </form>
-        </div>
-        </li>
-        <li>
-        
-            <div id="pagseguro">
+        <div id="pagseguro">
                 <h2><em>PagSeguro</em></h2>
                 <!-- INICIO FORMULARIO BOTAO PAGSEGURO -->
                 <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
@@ -66,6 +65,18 @@
                 </form>
                 <!-- FINAL FORMULARIO BOTAO PAGSEGURO -->
             </div>
+        
+        </li>
+        <li>
+        
+        <div id="paypal">
+        <h2><em>PayPal</em></h2>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="W84TH663UFX7G" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        </div>
             
         </li>
     </ul>

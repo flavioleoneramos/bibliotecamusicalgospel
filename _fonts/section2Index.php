@@ -10,6 +10,12 @@
         text-decoration: none;
         color: #e30224;
     }
+
+    @media screen and (max-width: 800px){
+        div#historia{
+            margin-left: 0;
+        }
+    }
 </style>
 <div id="historia">
         <h1>Linha do tempo</h1></br>
