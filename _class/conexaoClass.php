@@ -213,25 +213,24 @@ public function mostrarCursos(){
             $cur->setDescricaoCurso($row["descricaoCurso"]);
             echo "<ul>";
                 echo "<li>";
-                echo "</br>";echo "</br>";
+                echo "</br>";
                     echo "<h1>Curso: <em>".$cur->getNomeCurso()."</em></h1>";
-                    echo "<figure>";
+                    echo "</br>";
+                    echo "<figure id='figureCurso'>";
                         //echo "<img src='".$row["imagemCurso"]." alt='".$row["nomeCurso"]."'>";
-                        echo "<img src='".$row["imagemCurso"]."'>";
+                        echo "<img src='".$row["imagemCurso"]."' alt='".$row["nomeCurso"]."'>";
                         //echo "<p>".$row["nomeCurso"]."</p>";
                         echo "<figcaption>";
-                        echo "</br>";
                         echo "<p><h1>Descrição:</h1></p>";
-                        echo "</br>";
                         echo "<p>".$cur->getDescricaoCurso()."</p>";
                         echo "</br>";
+                        echo "<a href='".$cur->getLinkCurso()."' class='link'>Ver mais</a> <a href='".$cur->getLinkComprar()."' class='link'>Comprar</a></br></br>";
+                        echo "<a href='".$cur->getLinkCurso()."'><img src='".$cur->getImagemLinkCurso()."' alt='Ver mais sobre o curso ".$cur->getNomeCurso()."'></a>&nbsp;<a href='".$cur->getLinkComprar()."' class=''><img src='".$cur->getImagemLinkComprar()."' alt='Comprar o curso ".$cur->getNomeCurso()."'></a>";
                         echo "</figcaption>";
                         echo "</br>";
-                        echo "<a href='".$cur->getLinkCurso()."' class='link'>Ver mais</a> <a href='".$cur->getLinkComprar()."' class='link'>Comprar</a>";
                     echo "</figure>";
                 echo "<li>";
             echo "</ul>";
-            
 
         }
     }
