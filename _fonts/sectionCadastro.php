@@ -17,7 +17,7 @@
 </style>
 <div id="cadastro">
     <h1>Cadastro</h1>
-    <form method="post" action="_contr/verCadastro.php">
+    <form method="post" action="_contr/verCadastro.php"  enctype="multipart/form-data">
         <label for="idNome">Nome: </label><input type="txt" name="nome" id="idNome" required="required"></br></br>
         <label for="idEmail">Email: </label><input type="email" name="email" id="idEmail"  required="required"></br></br>
         <label for="idSenha">Senha: </label><input type="password" name="senha" id="idSenha"  required="required"></br></br>

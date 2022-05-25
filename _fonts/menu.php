@@ -5,6 +5,13 @@
     nav#menu img.iconMenu{
             display: none;
         }
+
+        nav#menu ul#menuOpacit li.linkMenu img.imgMenu{
+            background-color: white;
+            margin-right: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
     }
     @media screen and (max-width: 800px){
         nav#menu{
@@ -37,6 +44,13 @@
             box-shadow: 2px 2px 2px white;
         }
 
+        nav#menu ul#menuOpacit li.linkMenu img.imgMenu{
+            background-color: white;
+            margin-right: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
     }
 </style>
 <nav id="menu">
@@ -47,19 +61,19 @@
         
         <ul id="menuOpacit">
             <li class="linkMenu">
-                <a href="index.php" class="linkMenu" id="home">Home</a>
+                <a href="index.php" class="linkMenu" id="home"><img src="_imagens/home.png" alt="Página inicial" class="imgMenu">&nbsp;Home</a>
             </li>
             <li class="linkMenu">
-                <a href="curso.php" class="linkMenu" id="curso">Cursos</a>
+                <a href="curso.php" class="linkMenu" id="curso"><img src="_imagens/curso.png" alt="Página de cursos" class="imgMenu">&nbsp;Cursos</a>
             </li>
             <li class="linkMenu">
-                <a href="tvonline.php" class="linkMenu" id="tv">Tv Online</a>
+                <a href="tvonline.php" class="linkMenu" id="tv"><img src="_imagens/tv.png" alt="Página de Tv onlinde" class="imgMenu">&nbsp;Tv Online</a>
             </li>
             <li class="linkMenu">
-                <a href="faucets.php" class="linkMenu" id="faucet">Faucets</a>
+                <a href="faucets.php" class="linkMenu" id="faucet"><img src="_imagens/faucet.png" alt="Página de faucets" class="imgMenu">&nbsp;Faucets</a>
             </li>
             <li class="linkMenu">
-                <a href="#" class="linkMenu">Loja</a>
+                <a href="#" class="linkMenu"><img src="_imagens/loja.png" alt="Página inicial" class="imgMenu">&nbsp;Loja</a>
             </li>
         </ul>
 </nav>
