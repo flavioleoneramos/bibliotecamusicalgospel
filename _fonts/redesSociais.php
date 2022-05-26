@@ -29,9 +29,6 @@
 </style>
 
 <ul id="footerAll">
-    <li>
-        <a href="contato.php" class="linkR"><img src="_imagens/contato.png" alt="Contato"> Contato</a>
-    </li>
 
         <li>
             <a href="https://www.youtube.com/channel/UCGmHg7fa2422tieV8UsZMGQ" target="blank" class="linkR"><img src="_imagens/youtube.png" alt="Youtube"> Youtube</a>

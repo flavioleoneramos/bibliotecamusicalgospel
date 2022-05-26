@@ -12,10 +12,28 @@
         color: white;
     }
 
+    div#loginCadastro header{
+        margin-bottom: 25px;
+    }
+
+    div#loginCadastro header a.linkR{
+        text-decoration: none;
+        color: #8a0015;
+    }
+
+    div#loginCadastro header a.linkR:hover{
+        text-decoration: underline;
+        color: #e30224;
+    }
+
     @media screen and (max-width: 800px){
         div#loginCadastro{
             margin-top: 30px;
             margin-left: -50px;
+        }
+
+        div#loginCadastro header a.linkR{
+            margin-left: 80px;
         }
     }
 </style>
@@ -26,6 +44,10 @@
     <input type="button" id="darkMod" value="Modo Escuro" class="botao" onclick="darkMod()">
 </div>-->
 <div id="loginCadastro">
+    <header>
+        <a href="contato.php" class="linkR"><img src="_imagens/contato.png" alt="Contato"> Contato</a>
+    </header>
+    <section>
     <?php
         if(!isset($_SESSION['nome'])){
             echo "<ul>
@@ -45,5 +67,6 @@
         </ul>";
         }
     ?>
+    </section>
 </div>
 

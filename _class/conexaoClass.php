@@ -296,7 +296,7 @@ public function setContato($nome,$email,$msg){
 
     if($conn->query($sql) === true){
         //echo "<em>Mensagem enviada com sucesso</em>";
-        header('location: ../perfil.php?contatoMsg=true');
+        header('location: ../returnContato.php?contatoMsg=true');
     }
 
 }

@@ -1,7 +1,7 @@
 <?php
-$contatoNome = htmlspecialchars(isset($_GET["contatoNome"]));
-$contatoEmail = htmlspecialchars(isset($_GET["contatoEmail"]));
-$contatoMsg = htmlspecialchars(isset($_GET["contatoMsg"]));
+$contatoNome = isset($_GET["contatoNome"]);
+$contatoEmail = isset($_GET["contatoEmail"]);
+$contatoMsg = isset($_GET["contatoMsg"]);
 
 /*if(isset($_GET["contatoNome"])){
   echo "<span class='mensagem'>Obrigado pelo contato ".isset($_GET["contatoNome"]).", em breve retornaremos.</span>";
@@ -11,7 +11,7 @@ $contatoMsg = htmlspecialchars(isset($_GET["contatoMsg"]));
 
 require_once "../_class/conexaoClass.php";
 
-$contato = new conexaoClass();
-$contato->setContato($contatoNome,$contatoEmail,$contatoMsg);
+$contatoC = new conexaoClass();
+$contatoC->setContato($contatoNome,$contatoEmail,$contatoMsg);
 
 ?>
