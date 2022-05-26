@@ -61,9 +61,8 @@ class conexaoClass {
 
 public function inserirTv($idTv,$nomeTv,$imagemTv,$linkTv){
    //$imagemTv = "_imagens/" . $imagemTv;
-    require_once "_class/conexaoClass.php";
-    $c = new conexaoClass();
-    $conn = new mysqli($c->getLocalhost(),$c->getUsuario(),$c->getSenha(),$c->getNomeBanco());
+    
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
     
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
@@ -87,9 +86,8 @@ public function inserirTv($idTv,$nomeTv,$imagemTv,$linkTv){
 }
 
 public function inserirFaucet($idFaucet,$nomeFaucet,$imagemFaucet,$linkFaucet,$descricaoFaucet){
-    require_once "_class/conexaoClass.php";
-    $c = new conexaoClass();
-    $conn = new mysqli($c->getLocalhost(),$c->getUsuario(),$c->getSenha(),$c->getNomeBanco());
+    
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
     
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
@@ -113,9 +111,7 @@ public function inserirFaucet($idFaucet,$nomeFaucet,$imagemFaucet,$linkFaucet,$d
 }
 
 public function mostrarTvAside(){
-    require_once "_class/conexaoClass.php";
-    $c = new conexaoClass();
-    $conn = new mysqli($c->getLocalhost(),$c->getUsuario(),$c->getSenha(),$c->getNomeBanco());
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
     
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
@@ -162,9 +158,8 @@ if($result->num_rows > 0){
 }
 
 public function inserirCurso($idCurso,$nomeCurso,$imagemCurso,$linkCurso,$linkComprar,$imagemLinkCurso,$imagemLinkComprar,$descricaoCurso){
-    require_once "_class/conexaoClass.php";
-    $c = new conexaoClass();
-    $conn = new mysqli($c->getLocalhost(),$c->getUsuario(),$c->getSenha(),$c->getNomeBanco());
+    
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
     
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
@@ -187,10 +182,8 @@ public function inserirCurso($idCurso,$nomeCurso,$imagemCurso,$linkCurso,$linkCo
 }
 
 public function mostrarCursos(){
-    require_once "_class/conexaoClass.php";
-    $c = new conexaoClass();
 
-    $conn = new mysqli($c->getLocalhost(),$c->getUsuario(),$c->getSenha(),$c->getNomeBanco());
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
     
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
@@ -237,6 +230,16 @@ public function mostrarCursos(){
     
 }
 
+public function conectBanco(){
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
+    
+    if($conn->connect_error){
+        die("Falha ao conectar: " . $conn->connect_error);
+    }
+
+    return $conn;
+}
+
 public function mostrarTvOnline(){
     require_once "_class/conexaoClass.php";
     $c = new conexaoClass();
@@ -279,6 +282,23 @@ if($result->num_rows > 0){
     echo "</ul>";
     
     
+}
+
+public function setContato($nome,$email,$msg){
+    //$conn = $this->conectBanco();
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
+    
+    if($conn->connect_error){
+        die("Falha ao conectar: " . $conn->connect_error);
+    }
+
+    $sql = "INSERT INTO contato VALUES ('$nome','$email','$msg')";
+
+    if($conn->query($sql) === true){
+        //echo "<em>Mensagem enviada com sucesso</em>";
+        header('location: ../perfil.php?contatoMsg=true');
+    }
+
 }
 
 }
