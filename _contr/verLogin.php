@@ -24,9 +24,9 @@ if($result->num_rows > 0){
     $usuario = new usuarioClass();
     session_start();
     while($row = $result->fetch_assoc()){
-        $_SESSION["nome"] = $row["nome"];
-        $_SESSION["email"] = $row["email"];
-        $_SESSION["foto"] = $row["foto"];
+        $_SESSION["idNome"] = $row["nome"];
+        $_SESSION["idEmail"] = $row["email"];
+        $_SESSION["idFoto"] = $row["foto"];
     }
     header('location: ../perfil.php');
 }

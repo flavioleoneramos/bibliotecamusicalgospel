@@ -217,8 +217,8 @@ public function mostrarCursos(){
                         echo "<p><h1>Descrição:</h1></p>";
                         echo "<p>".$cur->getDescricaoCurso()."</p>";
                         echo "</br>";
-                        echo "<a href='".$cur->getLinkCurso()."' class='link'>Ver mais</a> <a href='".$cur->getLinkComprar()."' class='link'>Comprar</a></br></br>";
-                        echo "<a href='".$cur->getLinkCurso()."'><img src='".$cur->getImagemLinkCurso()."' alt='Ver mais sobre o curso ".$cur->getNomeCurso()."'></a>&nbsp;<a href='".$cur->getLinkComprar()."' class=''><img src='".$cur->getImagemLinkComprar()."' alt='Comprar o curso ".$cur->getNomeCurso()."'></a>";
+                        echo "<a href='".$cur->getLinkComprar()."' class='link'>Comprar</a></br></br>";
+                        echo "<a href='".$cur->getLinkComprar()."' class=''><img src='".$cur->getImagemLinkComprar()."' alt='Comprar o curso ".$cur->getNomeCurso()."'></a>";
                         echo "</figcaption>";
                         echo "</br>";
                     echo "</figure>";

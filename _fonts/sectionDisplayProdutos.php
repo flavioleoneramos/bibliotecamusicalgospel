@@ -7,6 +7,7 @@ $idLinkAfiliadoComprarDisplay = isset($_GET["idLinkAfiliadoComprar"]);
 $idPrecoDisplay = isset($_GET["idPreco"]);
 $idQrCodeDisplay = isset($_GET["idQrCode"]);
 
+
 ?>
 
 <figure>

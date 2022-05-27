@@ -1,6 +1,0 @@
-cor link/botao #8a0015
-cor link/botao:hover #e30224
-background interface #fae1c0
-background header/footer #332d27
-background section/aside #85725f
-box-shadon #e30224

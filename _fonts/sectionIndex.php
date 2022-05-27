@@ -49,7 +49,7 @@
     </li>
     <li>
         <?php
-            require_once "section2Footer.php";
+            //require_once "section2Footer.php";
         ?>
     </li>
 </ul>

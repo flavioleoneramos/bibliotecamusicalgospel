@@ -21,13 +21,14 @@ if($conn->connect_error){
     die('Erro ao conectar' . $conn->connect_error);
 }
 
-$sql = "INSERT INTO usuario (nome,email,senha,foto) VALUES ('$nome','$email','$senha','../_imagens/default.png')";
+$sql = "INSERT INTO usuario (nome,email,senha,foto) VALUES ('$nome','$email','$senha','_imagens/default.png')";
 
 if($conn->query($sql) === true){
     //echo "Dados gravados com sucesso";
     session_start();
-    $_SESSION["nome"] = $nome;
-    $_SESSION["email"] = $email;
+    $_SESSION["idNome"] = $nome;
+    $_SESSION["idEmail"] = $email;
+    $_SESSION["idFoto"] = "_imagens/default.png";
 
 }else{
     echo "Error " . $sql . "</br>" . $conn->connect_error;

@@ -27,5 +27,6 @@
  $cursoConn = new conexaoClass();
  
  $cursoConn->mostrarCursos();
+ 
 
 ?>

@@ -1,6 +1,9 @@
 <?php
     session_start();
     //require_once "_class/usuarioClass.php";
+    if(!$_SESSION["idNome"]){
+        header('location: login.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,6 +25,7 @@
         section#sectionPerfil{
             width: 100%;
             margin: 20px auto 20px auto;
+            text-align: center;
         }
     </style>
 </head>

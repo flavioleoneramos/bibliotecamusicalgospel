@@ -38,6 +38,7 @@
             margin-left: -60px;
         }
     }
+    
 </style>
 <div id="footerIndex">
     <h1>Colabore com o canal da forma de desejar!</h1>

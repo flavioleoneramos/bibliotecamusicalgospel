@@ -49,7 +49,7 @@
     </header>
     <section>
     <?php
-        if(!isset($_SESSION['nome'])){
+        if(!isset($_SESSION['idNome'])){
             echo "<ul>
                 <li>
                     <a href='login.php' class='link'>Login</a>
@@ -62,7 +62,7 @@
             <li>
                 <a href='logout.php' class='link'>Logout</a>
                 <a href='perfil.php' class='link' id='perfil'>Perfil</a></br></br>
-                <strong>Bem vindo(a): </strong><em>".$_SESSION["nome"]."</em>
+                <strong>Bem vindo(a): </strong><em>".$_SESSION["idNome"]."</em>
             </li>
         </ul>";
         }
