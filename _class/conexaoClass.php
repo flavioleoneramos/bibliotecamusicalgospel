@@ -218,7 +218,7 @@ public function mostrarCursos(){
                         echo "<p>".$cur->getDescricaoCurso()."</p>";
                         echo "</br>";
                         echo "<a href='".$cur->getLinkComprar()."' class='link'>Comprar</a></br></br>";
-                        echo "<a href='".$cur->getLinkComprar()."' class=''><img src='".$cur->getImagemLinkComprar()."' alt='Comprar o curso ".$cur->getNomeCurso()."'></a>";
+                        echo "<a href='".$cur->getLinkComprar()."' class=''><img src='".$cur->getImagemLinkComprar()."' class='qrCode' alt='Comprar o curso ".$cur->getNomeCurso()."'></a>";
                         echo "</figcaption>";
                         echo "</br>";
                     echo "</figure>";

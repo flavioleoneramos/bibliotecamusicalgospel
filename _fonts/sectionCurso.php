@@ -18,6 +18,21 @@
         font-size: 16pt;
         font-weight: bold;
     }
+
+    @media screen and (max-width: 800px){
+        figure#figureCurso{
+            margin-left: -45px;
+            max-width: 500px;
+        }
+
+        figure#figureCurso img{
+            max-width: 500px;
+        }
+
+        figure#figureCurso figcaption img.qrCode{
+            display: none;
+        }
+    }
 </style>
 
 <h1>Cursos Hotmart</h1>

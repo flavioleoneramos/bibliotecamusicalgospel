@@ -1,7 +1,23 @@
 
 
 <style>
+nav#menu ul#menuOpacit li.linkMenu{
+    position: relative;
+}
+
+nav#menu ul#menuOpacit li.linkMenu span#lojaBreve{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+}
+
     @media screen and (min-width: 800px){
+
+        
     nav#menu img.iconMenu{
             display: none;
         }
@@ -14,6 +30,13 @@
         }
     }
     @media screen and (max-width: 800px){
+
+        nav#menu ul#menuOpacit li.linkMenu span#lojaBreve{
+            top: -10px;
+            left: -5px;
+            width: 70px;
+        }
+
         nav#menu{
             width: 200px;
             position: absolute;
@@ -73,6 +96,7 @@
                 <a href="faucets.php" class="linkMenu" id="faucet"><img src="_imagens/faucet.png" alt="Página de faucets" class="imgMenu">&nbsp;Faucets</a>
             </li>
             <li class="linkMenu">
+                <span id="lojaBreve">Em breve</span>
                 <a href="#" class="linkMenu"><img src="_imagens/loja.png" alt="Página inicial" class="imgMenu">&nbsp;Loja</a>
             </li>
         </ul>
