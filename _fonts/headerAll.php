@@ -15,18 +15,18 @@
 <ul class="alinhamento">
     <li>
         <?php
-            require_once '_fonts/logo.php';
+            include '_fonts/logo.php';
         ?>
     </li>
     <li>
         <?php
-            require_once '_fonts/menu.php';
+            include '_fonts/menu.php';
         ?>
     </li>
     
     <li>
         <?php
-            require_once '_fonts/menuloginCadastro.php';
+            include '_fonts/menuLoginCadastro.php';
         ?>
     </li>
 </ul>

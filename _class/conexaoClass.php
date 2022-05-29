@@ -22,6 +22,13 @@ class conexaoClass {
         $this->usuario = "root";
         $this->senha = "";
         $this->nomeBanco = "bmg";
+		
+		/*
+		$this->localhost = "localhost";
+        $this->usuario = "id18643078_user_bmg";
+        $this->senha = "/up>{Opx4f%YQ]8!";
+        $this->nomeBanco = "id18643078_bmg";
+		*/
     }
     
     public function getLocalhost() {
