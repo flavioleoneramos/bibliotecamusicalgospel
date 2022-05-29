@@ -5,6 +5,16 @@ nav#menu ul#menuOpacit li.linkMenu{
     position: relative;
 }
 
+nav#menu img#iconMenuOpen{
+    transition: 1s;
+}
+
+nav#menu img#iconMenuClose{
+    margin-left: 25px;
+    margin-right: 160px;
+    transition: 1s;
+}
+
 nav#menu ul#menuOpacit li.linkMenu span#lojaBreve{
     position: absolute;
     top: -10px;
@@ -50,7 +60,7 @@ nav#menu ul#menuOpacit li.linkMenu span#lojaBreve{
         }
 
         nav#menu ul li{
-            margin-bottom: 2px;
+            margin-bottom: 1px;
         }
 
         nav#menu ul li a{
@@ -104,23 +114,28 @@ nav#menu ul#menuOpacit li.linkMenu span#lojaBreve{
 
 <script>
     function mostrarMenu(){
-        var menu = document.getElementById("menuOpacit")
+
+        let menu = document.getElementById("menuOpacit")
         menu.style.display = "block"
-        var imgClose = document.querySelector("img#iconMenuOpen")
-        imgClose.style.display = "none";
+        let imgClose = document.querySelector("img#iconMenuOpen")
+        //imgClose.style.display = "none";
         //imgClose.src = "_imagens/iconMenuClose.png";
-        var box = document.getElementById("iconMenuResponsivo")
+        let box = document.getElementById("iconMenuResponsivo")
         box.innerHTML = `<img src="_imagens/iconMenuClose.png" class="iconMenu" id="iconMenuClose" onclick="fecharMenu()">`
+        
     }
 
     function fecharMenu(){
-        var menu = document.getElementById("menuOpacit")
+
+
+        let menu = document.getElementById("menuOpacit")
         
         menu.style.display = "none"
-        var imgClose = document.querySelector("img#iconMenuClose")
+        let imgClose = document.querySelector("img#iconMenuClose")
         imgClose.style.display = "none"
-        var box = document.getElementById("iconMenuResponsivo")
+        let box = document.getElementById("iconMenuResponsivo")
         box.innerHTML = `<img src="_imagens/iconMenuOpen.png" class="iconMenu" id="iconMenuOpen" onclick="mostrarMenu()">`
+    
     }
 </script>
 
