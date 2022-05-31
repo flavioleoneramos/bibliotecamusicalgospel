@@ -11,8 +11,16 @@
         width: 100%;
         margin: 20px auto 20px auto;
         text-align: center;
-        color: #e30224;
         font-weight: bold;
+    }
+
+    a.linkR{
+        color: #8a0015;
+        text-decoration: none;
+    }
+
+    a.linkR:hover{
+        color: #e30224;
     }
 </style>
 <div id="cadastro">
@@ -25,7 +33,7 @@
         <input type="submit" value="Cadastrar" class="botao" onclick="verificaSenha()"></br>
     </form>
     <div id="temConta">
-        <em>Já possui uma conta? <a href="login.php" class="botao">Login</a></em>
+        <em>Já possui uma conta? </em><a href="login.php" class="linkR">Faça login</a>
     </div>
 
     <script>

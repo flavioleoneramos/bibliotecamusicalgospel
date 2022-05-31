@@ -46,7 +46,7 @@
         <li>
 
         <a href="https://accounts.binance.com/en/register?ref=108666883" target="blank"><img src="_imagens/binance.png" alt="Binance" width="468px" height="90px"></a>
-      
+        <p><a href="https://www.flaticon.com/free-icons/account" title="account icons">Account icons created by srip - Flaticon</a></p>
         <p id="copi"><em>Biblioteca Musical Gospel &copy;</em> - Desenvolvido por <a href="https://www.linkedin.com/in/flavioleoneramos/" target="blank" class="linkR"><em>Flávio Ramos</em></a></p>
    
         </li>

@@ -7,6 +7,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
     Author     : leone
 */
 
-* p,em{
-    font-size: 16pt;
+* p{
+    font-size: 12pt;
 }
+
+* em{
+    font-size: 14pt;
+}
+
+* a{
+    font-size: 12pt;
+}
+
