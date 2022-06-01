@@ -5,6 +5,7 @@
   $insere = new controlClass();
   $seedSenha = rand();
   $insere->insereCodigo($emailRecupSenha,$seedSenha);
+  $insere->enviaEmail($seedSenha,$emailRecupSenha);
 ?>
 
 <script>
