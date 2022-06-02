@@ -32,16 +32,18 @@ class controlClass{
         }
     }
 
-    public function enviaEmail($codigo,$destinatario){
+public function enviaEmail($codigo,$destinatario){
 // example on using PHPMailer with GMAIL
+
 
 include("../PHPMailer/class.phpmailer.php");
 include("../PHPMailer/class.smtp.php"); // note, this is optional - gets called from main class if not already loaded
+//include("../PHPMailer/src/Exception.php");
 
+// example on using PHPMailer with GMAIL
 $mail             = new PHPMailer();
 
-//$body             = file_get_contents('../contents.html');
-$body = "<em>Código para recuperar senha </em>" . $codigo;
+$body             = "<p>Código para recuperar senha </p>" . $codigo;
 
 $mail->IsSMTP();
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
@@ -52,15 +54,15 @@ $mail->Port       = 465;                   // set the SMTP port
 $mail->Username   = "topgospeladoracao@gmail.com";  // GMAIL username
 $mail->Password   = "nezgphiszhtkapcr";            // GMAIL password
 
-$mail->From       = "vietchannelspaypal@gmail.com";
+$mail->From       = "topgospeladoracao@gmail.com";
 $mail->FromName   = "Webmaster";
 $mail->Subject    = "Recuperação de senha";
-$mail->AltBody    = "Código para alteração da senha. "; //Text Body
+$mail->AltBody    = "<p>Código para recuperar senha </p>" . $codigo; //Text Body
 $mail->WordWrap   = 50; // set word wrap
 
 $mail->MsgHTML($body);
 
-$mail->AddReplyTo("vietchannelspaypal@gmail.com","Webmaster");
+$mail->AddReplyTo("replyto@yourdomain.com","Webmaster");
 
 $mail->AddAttachment("/path/to/file.zip");             // attachment
 $mail->AddAttachment("/path/to/image.jpg", "new.jpg"); // attachment
@@ -75,6 +77,6 @@ if(!$mail->Send()) {
   echo "Message has been sent";
 }
 
-    }
-        
+}
+
 }
