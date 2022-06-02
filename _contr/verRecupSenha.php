@@ -5,13 +5,18 @@
   }
 </style>
 <?php
+
   $emailRecupSenha = $_POST["emailRecupSenha"];
   //echo $emailRecupSenha;
-  require_once "../_class/controlClass.php";
-  $insere = new controlClass();
+  include '../_class/controlClass.php';
+  include '../_class/emailClass.php';
+  $cod = new controlClass();
+  $insere = new Email();
   $seedSenha = rand();
-  $insere->insereCodigo($emailRecupSenha,$seedSenha);
-  $insere->enviaEmail($seedSenha,$emailRecupSenha);
+  $assunto = "Codigo para recuperacao de senha";
+  $corpo = "Codigo: " . $seedSenha;
+  $cod->insereCodigo($emailRecupSenha,$seedSenha);
+  $insere->sendEmail($emailRecupSenha,$assunto,$corpo);
 ?>
 
 <script>

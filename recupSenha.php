@@ -30,6 +30,7 @@
     ?>
 </header>
 <section id="sectionRecupSenha">
+    
     <h1>Recuperar senha</h1>
     <form method="POST" action="_contr/verRecupSenha.php">
       <label for="emailRecupSenha">Email: </label><input type="email" required id="emailRecupSenha" name="emailRecupSenha">
