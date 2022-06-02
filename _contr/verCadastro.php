@@ -30,6 +30,13 @@ if($conn->query($sql) === true){
     $_SESSION["idEmail"] = $email;
     $_SESSION["idFoto"] = "_imagens/default.png";
 
+    include '../_class/controlClass.php';
+    include '../_class/emailClass.php';
+    $emailCadastro = new Email();
+    $assunto = "Cadastro no site";
+    $corpo = "<em>Obrigado por se cadastrar em nosso site!</em>";
+    $emailCadastro->sendEmail($email,$assunto,$corpo);
+
 }else{
     echo "Error " . $sql . "</br>" . $conn->connect_error;
 }
