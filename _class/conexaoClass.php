@@ -188,6 +188,26 @@ public function inserirCurso($idCurso,$nomeCurso,$imagemCurso,$linkCurso,$linkCo
     }
 }
 
+public function mudarFoto($novaFoto,$emailNovaFoto){
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
+    
+    if($conn->connect_error){
+        die("Falha ao conectar: " . $conn->connect_error);
+    }
+
+    $sql = "UPDATE usuario SET foto='$novaFoto' WHERE email='$emailNovaFoto'";
+    
+    if($conn->query($sql) === true){
+        echo "Update realizado com sucesso";
+        //unset($_SESSION['idFoto']);
+        $_SESSION['idFoto'] = $novaFoto;
+        //echo $novaFoto;
+        //header('location: ../perfil.php');
+    }else{
+        echo "Erro ao realizar update";
+    }
+}
+
 public function mostrarCursos(){
 
     $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());

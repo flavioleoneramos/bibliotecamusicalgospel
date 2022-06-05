@@ -1,14 +1,14 @@
 <?php
 
-    $nomeUser = htmlspecialchars($_SESSION["idNome"]);
-    $emailUser = htmlspecialchars($_SESSION["idEmail"]);
-    $fotoUser = htmlspecialchars($_SESSION["idFoto"]);
+    $nomeUser = $_SESSION["idNome"];
+    $emailUser = $_SESSION["idEmail"];
+    $fotoUser = $_SESSION["idFoto"];
 
 ?>
 
 <style>
     #dadosPerfil{
-        line-height: 90px;
+        line-height: 30px;
     }
 
     ul.userPerfil{
@@ -51,6 +51,11 @@
     a.linkR:hover{
         color: #e30224;
     }
+    div#trocarFoto{
+        display: none;
+        margin: 10px;
+
+    }
 
     @media screen and (min-width: 800px){
         ul.userPerfil li{
@@ -79,10 +84,16 @@
             <figure>
                 <img src="<?php echo $fotoUser;?>" id="fotoPerfil" alt="Imagem de perfil">
                 <figcaption>
-                    <a href="updateDados.php" class="botao">Enviar Foto</a>
+                    <button id="enviarFoto" onclick="enviarFoto()" class="botao">Trocar foto</button>
                 </figcaption>
             </figure>
-            
+            <div id="trocarFoto">
+                <em>Selecione a foto</em>
+                <form action="atualizaFoto.php" method="post" enctype="multipart/form-data">
+                    <input type="file" id="novaFoto" name="novaFoto" required></br>
+                    <input type="submit" value="Enviar" class="botao">
+                </form>
+            </div>
         </div>
     </li>
 </ul>
@@ -109,4 +120,11 @@
 ?>
 
 </section>
+
+<script>
+    function enviarFoto(){
+        let divNovaFoto = document.getElementById('trocarFoto')
+        divNovaFoto.style.display = 'block'
+    }
+</script>
 

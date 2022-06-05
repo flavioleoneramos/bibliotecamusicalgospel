@@ -1,3 +1,10 @@
+<?php
+    session_start();
+
+    if(!$_SESSION['admin']){
+        header('location: index.php');
+    }
+?>
 <h1>Inserir Tv</h1>
 
 <form method="post" action="inserirTv.php" enctype="multipart/form-data">

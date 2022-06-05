@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 use LDAP\Result;
 
 $email = htmlspecialchars($_POST["email"]);
@@ -22,12 +22,17 @@ $result = $conn->query($sql);
 if($result->num_rows > 0){
     
     $usuario = new usuarioClass();
-    session_start();
+    
     while($row = $result->fetch_assoc()){
         $_SESSION["idNome"] = $row["nome"];
         $_SESSION["idEmail"] = $row["email"];
         $_SESSION["idFoto"] = $row["foto"];
+        if($row["email"] === "flavioleone8383@gmail.com"){
+            $_SESSION["admin"] = true;
+        }
     }
     header('location: ../perfil.php');
+}else{
+    header('location: ../login.php');
 }
 ?>
