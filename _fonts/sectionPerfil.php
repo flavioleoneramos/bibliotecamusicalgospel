@@ -8,7 +8,7 @@
 
 <style>
     #dadosPerfil{
-        line-height: 30px;
+        line-height: 80px;
     }
 
     ul.userPerfil{
@@ -23,6 +23,11 @@
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0.5);
         transition: 1s;
+    }
+
+    #imagemPerfil img#fotoPerfil{
+        max-width: 200px;
+        max-height: 200px;
     }
 
     #imagemPerfil figure{
