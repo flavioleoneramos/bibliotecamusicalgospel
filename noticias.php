@@ -19,7 +19,7 @@ session_start();
     <link rel="stylesheet" href="_css/styleLinkMenu.css">
     <title>Biblioteca Musical Gospel</title>
     <style>
-        #perfil{
+        #noticia{
             text-decoration: underline;
         }
 
@@ -27,6 +27,10 @@ session_start();
             width: 100%;
             margin: 20px auto 20px auto;
             text-align: center;
+        }
+
+        section#noticias ul li{
+            margin: 20px auto 20px auto;
         }
     </style>
 </head>

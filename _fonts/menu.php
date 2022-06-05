@@ -96,15 +96,23 @@ nav#menu ul#menuOpacit li.linkMenu span#lojaBreve{
             <li class="linkMenu">
                 <a href="index.php" class="linkMenu" id="home"><img src="_imagens/home.png" alt="Página inicial" class="imgMenu">&nbsp;Home</a>
             </li>
+
             <li class="linkMenu">
                 <a href="curso.php" class="linkMenu" id="curso"><img src="_imagens/curso.png" alt="Página de cursos" class="imgMenu">&nbsp;Cursos</a>
             </li>
+
             <li class="linkMenu">
                 <a href="tvonline.php" class="linkMenu" id="tv"><img src="_imagens/tv.png" alt="Página de Tv onlinde" class="imgMenu">&nbsp;Tv Online</a>
             </li>
+
+            <li class="linkMenu">
+                <a href="noticias.php" class="linkMenu" id="noticia"><img src="_imagens/noticia.png" alt="Página de notícias" class="imgMenu">&nbsp;Notícias</a>
+            </li>
+            
             <li class="linkMenu">
                 <a href="faucets.php" class="linkMenu" id="faucet"><img src="_imagens/faucet.png" alt="Página de faucets" class="imgMenu">&nbsp;Faucets</a>
             </li>
+            
             <li class="linkMenu">
                 <span id="lojaBreve">Em breve</span>
                 <a href="#" class="linkMenu"><img src="_imagens/loja.png" alt="Página inicial" class="imgMenu">&nbsp;Loja</a>

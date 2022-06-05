@@ -20,10 +20,11 @@ if($result->num_rows > 0){
       echo "<h1>" . $row["tituloNoticia"] . "</h1>";
       echo "<img src='".$row["imagemNoticia"] . "' alt='" . $row["tituloNoticia"]. "' </br>";
       echo "<p>" . $row["textoNoticia"] . "</p>";
-      echo "<form method='get' action='../displayNoticias.php'>";
-      echo "<input type='text' hidden='hidden' name='tituloNoticia' value='" . $row["tituloNoticia"] . "'>";
-      echo "<input type='text' hidden='hidden' name='imagemNoticia' value='".$row["imagemTitulo"] . "'>";
-      echo "<input type='text' hidden='hidden' name='corpoNoticia' value='".$row["textoNoticia"] . "'>";
+        echo "<form method='get' action='displayNoticias.php'>";
+        echo "<input type='text' hidden='hidden' name='tituloNoticia' value='" . $row["tituloNoticia"] . "'>";
+        echo "<input type='text' hidden='hidden' name='imagemNoticia' value='".$row["imagemNoticia"] . "'>";
+        echo "<input type='hidden' hidden='hidden' name='corpoNoticia' value='".$row["textoNoticia"] . "'>";
+        echo "<input type='submit' value='Ver mais' class='botao'>";
       echo "</form>";
       echo "<li>";
   }
