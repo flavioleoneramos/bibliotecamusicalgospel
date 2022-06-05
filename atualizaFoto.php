@@ -25,7 +25,7 @@ session_start();
     print "</pre>";
 
 
-    $c->mudarFoto($novaFotof,$_SESSION["idEmail"]);
+    $c->mudarFoto($uploadfile,$_SESSION["idEmail"]);
     echo "<a href='perfil.php'>perfil</a>";
 
 

@@ -164,6 +164,20 @@ if($result->num_rows > 0){
     
 }
 
+public function inserirNoticia($titulo,$imagem,$corpo){
+    $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
+    
+    if($conn->connect_error){
+        die("Falha ao conectar: " . $conn->connect_error);
+    }
+
+    $sql = "INSERT INTO noticia VALUES ('$titulo','$imagem','$corpo')";
+    
+    if($conn->query($sql) === TRUE){
+        echo "Dados de Cursos gravados com sucesso!";
+    }
+}
+
 public function inserirCurso($idCurso,$nomeCurso,$imagemCurso,$linkCurso,$linkComprar,$imagemLinkCurso,$imagemLinkComprar,$descricaoCurso){
     
     $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
