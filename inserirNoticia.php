@@ -2,6 +2,7 @@
 
 $tituloNoticia = htmlspecialchars($_POST["tituloNoticia"]);
 $imagemNoticia = htmlspecialchars(isset($_FILES["imagemNoticia"]));
+$resumoNoticia = htmlspecialchars($_POST["resumoNoticia"]);
 $corpoNoticia = htmlspecialchars($_POST["corpoNoticia"]);
 
 require_once "_class/conexaoClass.php";
@@ -23,7 +24,7 @@ require_once "_class/noticiaClass.php";
         echo "Possível ataque de upload de arquivo!\n";
     }
     echo $uploadfile;
-    $cf->inserirNoticia($noticia->getTituloNoticia(),$uploadfile,$noticia->getCorpoNoticia());
+    $cf->inserirNoticia($noticia->getTituloNoticia(),$uploadfile,$resumoNoticia,$noticia->getCorpoNoticia());
 
     
     echo "</br><a href='admin.php'>admin</a>";

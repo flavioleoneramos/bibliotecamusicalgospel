@@ -164,14 +164,14 @@ if($result->num_rows > 0){
     
 }
 
-public function inserirNoticia($titulo,$imagem,$corpo){
+public function inserirNoticia($titulo,$imagem,$resumo,$corpo){
     $conn = new mysqli($this->getLocalhost(),$this->getUsuario(),$this->getSenha(),$this->getNomeBanco());
     
     if($conn->connect_error){
         die("Falha ao conectar: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO noticia VALUES ('$titulo','$imagem','$corpo')";
+    $sql = "INSERT INTO noticia VALUES ('$titulo','$imagem','$resumo','$corpo')";
     
     if($conn->query($sql) === TRUE){
         echo "Dados de Cursos gravados com sucesso!";

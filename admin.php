@@ -11,6 +11,7 @@
 <form method="post" action="inserirNoticia.php" enctype="multipart/form-data">
     <p>TituloNoticia: <input type="text" id="tituloNoticia" name="tituloNoticia"></p>
     <p>ImagemNoticia: <input type="file" id="imagemNoticia" name="imagemNoticia"></p>
+    <p>resumoNoticia: <input type="text" id="resumoNoticia" name="resumoNoticia"></p>
     <p>corpoNoticia: <input type="text" id="corpoNoticia" name="corpoNoticia"></p>
     <input type="submit" value="Cadastrar Noticia" class="botao">
 </form>

@@ -34,6 +34,7 @@
 <section id="displayNoticias">
     <?php 
         require_once '_fonts/sectionDisplayNoticias.php';
+        
     ?>
 </section>
 <footer id="footerAll">
