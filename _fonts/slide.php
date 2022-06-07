@@ -48,9 +48,9 @@ let funcaoParametro = function consultaPHP(){
 
       if($results->num_rows > 0){
         while($row = $results->fetch_array()){
-          echo $row[0];
-          echo $row[1];
-          echo $row[2];
+          echo $row[0] ."</br>";
+          echo "<img src='".$row[1]."'>";
+          echo $row[2] ."</br>";
         }
       }
 
