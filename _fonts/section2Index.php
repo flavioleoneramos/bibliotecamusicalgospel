@@ -17,6 +17,7 @@
         }
     }
 </style>
+
 <div id="historia">
         <h1>Linha do tempo</h1></br>
         <p>O canal <a href="https://www.youtube.com/channel/UCGmHg7fa2422tieV8UsZMGQ" class="bmg" target="blank"><em>Biblioteca Musical Gospel</em></a> surgiu

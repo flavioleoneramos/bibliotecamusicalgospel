@@ -6,6 +6,13 @@
     }
     
 </style>
+
+<?php
+
+    require_once "_fonts/slide.php";
+
+?>
+
 <div id="playlist">
     <h1>Playlist adicionadas ao canal</h1>
 
