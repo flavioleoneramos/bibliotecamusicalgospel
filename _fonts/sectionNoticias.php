@@ -19,7 +19,7 @@ if($result->num_rows > 0){
     echo "<li>";
       echo "<h1>" . $row["tituloNoticia"] . "</h1>";
       echo "<img src='".$row["imagemNoticia"] . "' alt='" . $row["tituloNoticia"]. "' </br>";
-      echo "<p>" . $row["textoNoticia"] . "</p>";
+      echo "<em>" . $row["textoNoticia"] . "</em>";
         echo "<form method='get' action='displayNoticias.php'>";
         echo "<input type='text' hidden='hidden' name='tituloNoticia' value='" . $row["tituloNoticia"] . "'>";
         echo "<input type='text' hidden='hidden' name='imagemNoticia' value='".$row["imagemNoticia"] . "'>";

@@ -1,17 +1,26 @@
 <style>
-    @media screen and (max-width: 800px){
-        div#playlist{
+
+        div#indexNoticia{
+            width: 100%;
+            margin: 20px auto 20px 30px;
             text-align: left;
+        }
+
+    @media screen and (max-width: 800px){
+        div#indexNoticia{
+            width: 100%;
+            margin: 20px auto 20px auto;
         }
     }
     
 </style>
 
-<?php
-
-    require_once "_fonts/slide.php";
-
-?>
+<div id="indexNoticia">
+    <?php
+        require "_fonts/indexNoticia.php";
+    ?>
+    </br><a href="noticias.php" class="botao">Veja mais notícias</a>
+</div>
 
 <div id="playlist">
     <h1>Playlist adicionadas ao canal</h1>

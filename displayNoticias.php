@@ -16,6 +16,7 @@
     <title>Biblioteca Musical Gospel</title>
     <style>
         section#displayNoticias{
+            width: 100%;
           margin: 20px auto 20px auto;
           text-align: center;
         }
