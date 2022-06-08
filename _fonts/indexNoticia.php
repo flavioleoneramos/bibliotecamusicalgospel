@@ -3,6 +3,9 @@
       max-width: 100px;
       max-height: 100px;
     }
+    input#inputNews{
+      
+    }
   </style>
   <?php
 
@@ -30,7 +33,7 @@
                     <input type='text' hidden='hidden' name='imagemNoticia' value='" . $row[1]  . "'>
                     <p><input type='text' hidden='hidden' name='resumoNoticia' value='" . $row[2]  . "'>
                     <input type='text' hidden='hidden' name='corpoNoticia' value='" . $row[3]  . "'>
-                    <input type='submit' value='Saiba mais' class='botao'></br></br>
+                    <input type='submit' id='inputNews' value='Saiba mais' class='botao'></br></br>
                 </form>";
             $cont++;
             if($cont > 2){

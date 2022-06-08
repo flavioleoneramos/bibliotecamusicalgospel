@@ -1,4 +1,11 @@
 <?php
+    session_start();
+
+    if(!$_SESSION['admin']){
+        header('location: index.php');
+    }
+?>
+<?php
 $idCurso = $_POST["idCurso"];
 $nomeCurso = $_POST["nomeCurso"];
 $imagemCurso = htmlspecialchars(isset($_FILES["imagemCurso"]));

@@ -1,4 +1,11 @@
 <?php
+    session_start();
+
+    if(!$_SESSION['admin']){
+        header('location: index.php');
+    }
+?>
+<?php
 
     $linkFaucet = htmlspecialchars($_POST['linkFaucet']);
     $imagemFaucet = htmlspecialchars(isset($_POST['imagemFaucet']));   

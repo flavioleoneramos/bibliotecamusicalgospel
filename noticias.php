@@ -32,6 +32,27 @@ session_start();
 
         section#noticias ul li{
             margin: 20px auto 20px auto;
+            padding: 10px;
+        }
+
+        section#noticias ul li figure#figureNews{
+            position: relative;
+            margin: 10px auto 10px auto;
+        }
+
+        section#noticias ul li figure#figureNews figcaption{
+            position: absolute;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+            color: white;
+            font-weight: bold;
+            top: 0;
+            left: 0;
+        }
+
+        section#noticias ul li figure#figureNews figcaption:hover{
+            background-color: rgba(0, 0, 0, 0,5);
         }
     </style>
 </head>

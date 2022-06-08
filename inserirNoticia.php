@@ -1,4 +1,11 @@
 <?php
+    session_start();
+
+    if(!$_SESSION['admin']){
+        header('location: index.php');
+    }
+?>
+<?php
 
 $tituloNoticia = htmlspecialchars($_POST["tituloNoticia"]);
 $imagemNoticia = htmlspecialchars(isset($_FILES["imagemNoticia"]));

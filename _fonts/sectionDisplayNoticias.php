@@ -2,7 +2,7 @@
 
 $tituloNoticia = $_GET["tituloNoticia"];
 $imagemNoticia = $_GET["imagemNoticia"];
-$resumoNoticia = $_GET["resumoNoticia"];
+//$resumoNoticia = $_GET["resumoNoticia"];
 $corpoNoticia = $_GET["corpoNoticia"];
 
 

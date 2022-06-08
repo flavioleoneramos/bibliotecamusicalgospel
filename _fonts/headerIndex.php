@@ -16,6 +16,7 @@
 </style>
 
 <div id="indexNoticia">
+    <h1><em>Fique por dentro das notícias do momento.</em></h1></br>
     <?php
         require "_fonts/indexNoticia.php";
     ?>
